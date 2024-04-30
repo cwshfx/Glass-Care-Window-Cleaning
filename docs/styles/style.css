@@ -1,0 +1,49 @@
+body {
+    background-color:white;
+    color:black;
+}
+
+nav {
+    display:flex;
+    justify-content: left;
+    font-family: Arial;
+}
+
+#page-link {
+    padding-right: 20px;
+    font-size: large;
+    color:black;
+    text-decoration: none;
+}
+
+.nav-contact {
+    display:flex;
+    align-items: left;
+    width:100%;
+}
+
+#nav-content {
+    padding-right:10px;
+    font-size: medium;
+    color:black;
+    text-decoration: none;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: center;
+    font-family: Arial;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#big-head, #sub-head {
+    display: flex;
+    align-items: center;
+    padding-left:40px;
+    text-align: left;
+}
