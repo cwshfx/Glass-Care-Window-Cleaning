@@ -5,45 +5,51 @@ body {
 
 nav {
     display:flex;
-    justify-content: left;
-    font-family: Arial;
-}
-
-#page-link {
-    padding-right: 20px;
-    font-size: large;
-    color:black;
-    text-decoration: none;
-}
-
-.nav-contact {
-    display:flex;
-    align-items: left;
-    width:100%;
-}
-
-#nav-content {
-    padding-right:10px;
-    font-size: medium;
-    color:black;
-    text-decoration: none;
-}
-
-.nav-links {
-    display:flex;
     justify-content: center;
-    font-family: Arial;
-}
-
-.container {
-    display:flex;
-    justify-content: center;
-    padding-top: 40px;
-}
-
-#big-head, #sub-head {
-    display: flex;
     align-items: center;
-    padding-left:40px;
-    text-align: left;
+    font-family: Arial;
+    gap:30px;
+}
+
+#page-link, #estimate-link{
+    font-size: 20px;
+    color:black;
+    text-decoration: none;
+}
+
+#estimate-link {
+    background-image: linear-gradient(to right, rgba(25,229,217,255) , rgba(96,121,234,255));
+    border-radius: 5px;
+    padding:3px;
+}
+
+#main-sub {
+    font-size: 20px;
+}
+
+.main-text {
+    width:40%;
+}
+
+.main-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    padding-top: 80px;
+    font-family: Arial;
+}
+
+.before-after-container {
+    padding-top:120px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial;
+    font-size: 25px;
+}
+
+#before-after-text {
+    padding-bottom:15px;
+    text-decoration: underline;
 }
