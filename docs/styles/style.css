@@ -5,6 +5,13 @@ body {
     text-align: center;
 }
 
+header {
+    top:20px;
+    width:100%;
+    position:fixed;
+
+}
+
 #navbar {
     font-size: 25px;
     font-weight: bold;
@@ -52,7 +59,6 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding-top: 80px;
     font-family: Arial;
 }
 
@@ -61,15 +67,10 @@ nav ul li:hover {
 }
 
 .container {
+    padding-top:200px;
     animation: 1s fadeInUp;
 }
 
-.main-container:hover, .about:hover, .why:hover {
-    transform: scale(1.05);
-  }
-.main-container, .about, .why {
-    transition: transform .3s;
-}
 @keyframes fadeInUp {
     0% {
         transform: translateY(100%);
@@ -117,8 +118,21 @@ nav ul li:hover {
     transition: transform .3s;
 }
 
+#h1-comments, #p-comments {
+    font-family: Arial;
+}
+
+.comments {
+    padding-top: 80px;
+    padding-bottom:80px;
+}
+
 /* Adjust layout for smaller screens */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    body {
+        padding-left:10px;
+        padding-right:10px;
+    }
     .main-container, .about, .why {
         flex-direction: column;
     }
