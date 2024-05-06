@@ -20,6 +20,14 @@ header {
     background-color: #c6d4d4;
 }
 
+/*needs to be fixed*/
+#nav-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -143,5 +151,9 @@ nav ul li:hover {
 
     .about, .why {
         padding-top: 100px;
+    }
+
+    #page-link, #estimate-link {
+        font-size: 16px;
     }
 }
