@@ -9,7 +9,6 @@ body {
 header {
     top:20px;
     width:100%;
-    position:fixed;
 }
 
 #navbar {
@@ -67,14 +66,14 @@ nav ul li:hover {
     margin-top: 20px;
 }
   
-  .card {
+.card {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 30%;
     margin-bottom: 20px;
     text-align: center;
-  }
+}
   
   .card img {
     width: 80%;
