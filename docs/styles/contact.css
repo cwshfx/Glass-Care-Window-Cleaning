@@ -52,9 +52,34 @@ nav ul li:hover {
     background-color: #D2E9E9;
 }
 
+body {
+    font-family: Arial;
+}
+
 .container {
     animation: 1s fadeInUp;
-    padding-top:200px;
+    padding-top:100px;
+}
+
+.phone-number {
+    
+    display:flex;
+    justify-content: center;
+    gap:7px;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    font-family: Arial;
 }
 
 @keyframes fadeInUp {
@@ -66,5 +91,22 @@ nav ul li:hover {
     100% {
         transform: translateY(0%);
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #page-link, #estimate-link {
+        font-size: 16px;
+    }
+    nav {
+        padding:0px;
+    }
+    footer {
+        gap:0px;
+        flex-direction: column;
     }
 }

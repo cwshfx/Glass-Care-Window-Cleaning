@@ -54,7 +54,7 @@ nav ul li:hover {
 }
 
 .services-title {
-    padding-top:200px;
+    padding-top:100px;
 }
 
 .container {
@@ -73,6 +73,7 @@ nav ul li:hover {
     width: 30%;
     margin-bottom: 20px;
     text-align: center;
+    background-color: grey;
 }
   
   .card img {
@@ -92,6 +93,13 @@ nav ul li:hover {
     padding: 0 20px;
   }
 
+  footer {
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    font-family: Arial;
+}
+
 @keyframes fadeInUp {
     0% {
         transform: translateY(100%);
@@ -108,15 +116,24 @@ nav ul li:hover {
     .card {
       font-size: medium;
       width: 25%;
-      background-color: rgb(52, 151, 52);
     }
   }
   
   @media screen and (max-width:900px) {
+    body {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     .card {
       font-size: large;
       width: 40%;
-      background-color: rgb(47, 123, 200);
+    }
+    #page-link, #estimate-link {
+      font-size: 16px;
+    }
+    footer {
+      gap:0px;
+      flex-direction: column;
     }
   }
   
@@ -124,6 +141,6 @@ nav ul li:hover {
     .card {
       font-size:larger;
       width: 80%;
-      background-color: grey;
     }
+    
   }
