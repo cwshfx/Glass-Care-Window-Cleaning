@@ -74,9 +74,14 @@ nav ul li:hover {
     margin-bottom: 20px;
     text-align: center;
     background-color: grey;
+    border-radius: 25px;
 }
-  
+
+.card:hover{
+  transform: scale(1.1);
+}
   .card img {
+    padding-top: 25px;
     width: 80%;
   }
   
@@ -112,35 +117,32 @@ nav ul li:hover {
     }
 }
 
-@media screen and (min-width:900px) {
-    .card {
-      font-size: medium;
-      width: 25%;
-    }
+@media screen and (max-width: 1024px) {
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
   }
-  
-  @media screen and (max-width:900px) {
-    body {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-    .card {
-      font-size: large;
-      width: 40%;
-    }
-    #page-link, #estimate-link {
-      font-size: 16px;
-    }
-    footer {
-      gap:0px;
+  .card {
+      width: 40%; /* Set the width of the cards to 90% */
+      margin: 0 auto 20px; /* Center the cards horizontally and add margin at the bottom */
+  }
+}
+
+/* Media query for phones */
+@media screen and (max-width: 768px) {
+  .container {
+      display: flex;
       flex-direction: column;
-    }
+      align-items: center;
   }
-  
-  @media screen and (max-width:600px) {
-    .card {
-      font-size:larger;
-      width: 80%;
-    }
-    
+  .card {
+      width: 80%; /* Set the width of the cards to 90% */
+      padding-bottom: 50px;
   }
+
+  footer {
+    gap:0px;
+    flex-direction: column;
+}
+}

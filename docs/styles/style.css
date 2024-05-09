@@ -1,7 +1,6 @@
 body {
     background-color: #EEF7FF;
     color: black;
-    font-size: 20px;
     text-align: center;
 }
 
@@ -144,6 +143,7 @@ footer {
     body {
         padding-left:20px;
         padding-right:20px;
+        font-size: 16px;
     }
     .main-container, .about, .why {
         flex-direction: column;
@@ -156,17 +156,21 @@ footer {
     .about, .why {
         padding-top: 100px;
     }
-
-    #page-link, #estimate-link {
-        font-size: 16px;
-    }
-
-    #about-img, #why-img {
+    #main-img, #about-img, #why-img {
         width:100%;
     }
 
     footer {
         gap:0px;
         flex-direction: column;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Adjust the size of the images */
+    #main-img,
+    #about-img,
+    #why-img {
+        width: 30%; /* Adjust as needed */
     }
 }
