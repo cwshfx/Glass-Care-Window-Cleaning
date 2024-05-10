@@ -2,6 +2,7 @@ body {
     background-color: #EEF7FF;
     color: black;
     text-align: center;
+    font-size: 18px;
 }
 
 header {
@@ -95,7 +96,7 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 70%;
+    width: 90%;
     gap: 30px;
 }
 
@@ -141,9 +142,8 @@ footer {
 /* Adjust layout for smaller screens */
 @media only screen and (max-width: 768px) {
     body {
-        padding-left:20px;
-        padding-right:20px;
-        font-size: 16px;
+        
+        font-size: 20px;
     }
     .main-container, .about, .why {
         flex-direction: column;
