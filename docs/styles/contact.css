@@ -62,7 +62,6 @@ body {
 }
 
 .phone-number {
-    
     display:flex;
     justify-content: center;
     gap:7px;

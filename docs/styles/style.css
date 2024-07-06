@@ -3,6 +3,7 @@ body {
     color: black;
     text-align: center;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 header {
@@ -73,7 +74,7 @@ nav ul li:hover {
 }
 
 .container {
-    padding-top:100px;
+    padding-top:140px;
     animation: 1s fadeInUp;
 }
 
